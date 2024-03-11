@@ -1,0 +1,11 @@
+apache_server:
+  server_name: "meu-servidor"
+  server_admin: "admin@exemplo.com"
+  document_root: "/var/www/html"
+  error_log: "/var/log/apache2/error.log"
+  access_log: "/var/log/apache2/access.log"
+  directories:
+    - path: "/var/www/html"
+      options: "Indexes FollowSymLinks"
+      allow_override: "All"
+      require: "all granted"
